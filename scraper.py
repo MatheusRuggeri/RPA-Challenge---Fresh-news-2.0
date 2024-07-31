@@ -380,13 +380,16 @@ class NewsScraper:
         
         results = []
         try:
-            if not(months == "" or months == 0):
+            if (months == "" or months == 0):
                 start_date = datetime(1, 1, 1)
             else:
                 start_date = datetime.now() - relativedelta(months=int(months))
             
+            start_str = start_date.strftime('%Y-%m-%d')
+            logging.info(f"Limit for the news: {start_str}")
+            
             # Flag to indicate whether the start date has been reached
-            reach_start_date = False
+            reach_start_date = False 
             
             # A counter to help in the logging, it will tell me if there are no results for the search,
             # or it reached the last news without reaching the start_date, or it reached page 10 (limit for LATimes)
@@ -596,4 +599,4 @@ if __name__ == "__main__":
         format = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
     )
     
-    scrape_news(['schott', 2, 'Climate & Environment'])
+    scrape_news(['amazon', 1, 'Climate & Environment'])
