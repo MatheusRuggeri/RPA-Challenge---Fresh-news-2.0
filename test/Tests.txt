@@ -1,0 +1,43 @@
+29/07/2024
+
+	General Search:
+		✅ Open page and load content
+		✅ Download images 
+		✅ Scrape the content
+		✅ Changed pages
+		✅ Test if there is a value on it
+		✅ Created the Excel
+		✅ Finish the program
+		
+	Search: Scfsdfafdsafdsafdsahofdstt
+	Months: 
+	Category:
+		Objective ->
+			Test an empty result
+		Result -> 
+			✅ Created the Excel (0 rows)
+						
+	Search: Automation
+	Months: 1
+	Category:	
+		Objective ->
+			Page changing
+		Result ->
+			❌❌ Changed pages (problem changing from page 10 to 11).
+
+	Search: Manhattan
+	Months: 1
+	Category:	
+		Objective ->
+			Test a new message (X minutes ago, or X hours ago)
+		Result ->
+			✅ No errors
+
+	Search: MLS
+	Months: 1
+	Category:	
+		Objective ->
+			Test if there is a value on the news
+		Result -> 
+			✅ Got the value
+
